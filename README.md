@@ -1,9 +1,10 @@
 # 碩士論文 實作程式碼
 ## 論文網址:
+https://hdl.handle.net/11296/cup4e3
 ## Dataset:
 本實驗使用NTP, DNS, HTTP做模型訓練，資料來源與資料處理的詳細說明請參考論文。\
 \
-使用wireshark將資料中的pcap檔轉換成txt，並使用ntp_preprocess.py, dns_preprocess.py, http_preprocess.py做資料處理，只留下<br>application message做訓練資料。
+使用wireshark將資料中的pcap檔轉換成txt，並使用ntp_preprocess.py, dns_preprocess.py, http_preprocess.py做資料處理，只留下application message做訓練資料。
 ## Model Training:
 使用Flan-T5 small(77M)做訓練。注意: 預設的參數中使用**bf16**的精準度，請確認GPU是否支援。
 
